@@ -1,4 +1,9 @@
-from src.aluguel import adicionar_inquilino, carregar
+import sys
+import os
+
+sys.path.append(os.path.abspath("src"))
+
+from aluguel import adicionar_inquilino, carregar
 
 def test_add():
     adicionar_inquilino("Teste", 500)
